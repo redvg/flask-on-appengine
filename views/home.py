@@ -2,6 +2,6 @@ from main import app
 
 
 @app.route('/')
-def hello():
+def home():
     
     return 'hello from appengine'
