@@ -64,4 +64,26 @@ git pull
 gcloud app deploy
 gcloud app versions list
 gcloud app versions stop
-``
+```
+
+## Smth with React
+
+shows how an entry point to react app can be served from flask \
+- ```/react``` renders index.html which passes control over to react
+- react prod build is altered to meet the flask structure
+- app.yaml is altered to serve static content
+
+```
+- url: /static
+  static_dir: static
+```
+
+some proper alternatives depending on the architecture: 
+.serve index.html from home route \
+.serve index.html from cdn (cloudstorage+firebase)\
+.spin up node js appengine, for py api spin up another appengine on flask \
+
+for guidance see
+https://github.com/redvg/react_burger#deployment
+https://medium.com/tech-tajawal/deploying-react-app-to-google-app-engine-a6ea0d5af132
+https://mhaligowski.github.io/blog/2017/04/05/template-for-react-application.html
