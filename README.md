@@ -6,12 +6,14 @@ extends https://github.com/GoogleCloudPlatform/python-docs-samples/tree/master/a
 
 main.py:
 - flask app
-- route binding
+
+views folder:
+- route bindings in respective modules
 
 ## Manifest
 
 app.yaml:
-- handlers section contains endpoint to function bindings
+- handlers section contains endpoint to script bindings
 - libraries section contains standard env extension, i.e. flask lib
 
 see https://cloud.google.com/appengine/docs/standard/python/config/appref for app manifest \
