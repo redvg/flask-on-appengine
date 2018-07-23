@@ -11,6 +11,7 @@ def hello():
 
 import views
 
+
 @app.errorhandler(500)
 def server_error(e):
 
