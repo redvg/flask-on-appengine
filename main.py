@@ -4,11 +4,6 @@ from flask import Flask
 
 app = Flask(__name__)
 
-@app.route('/bar')
-def hello():
-    
-    return 'hello from appengine'
-
 import views
 
 
