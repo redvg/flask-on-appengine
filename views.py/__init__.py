@@ -1,2 +1,2 @@
-from . import *
-from . import *
+from views.home import *
+from views.ping import *
