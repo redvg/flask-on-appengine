@@ -76,14 +76,15 @@ shows how an entry point to react app can be served from flask \
 ```
 - url: /static
   static_dir: static
+  application_readable: true #NB double check is needed for prod
 ```
 
-some proper alternatives depending on the architecture: 
+some proper alternatives depending on the architecture: \
 .serve index.html from home route \
 .serve index.html from cdn (cloudstorage+firebase)\
 .spin up node js appengine, for py api spin up another appengine on flask \
 
-for guidance see
+for guidance see \
 https://github.com/redvg/react_burger#deployment
 https://medium.com/tech-tajawal/deploying-react-app-to-google-app-engine-a6ea0d5af132
 https://mhaligowski.github.io/blog/2017/04/05/template-for-react-application.html
