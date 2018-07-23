@@ -1,2 +1,2 @@
-from .home import *
-from .ping import *
+from . import *
+from . import *
