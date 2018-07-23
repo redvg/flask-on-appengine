@@ -79,10 +79,12 @@ shows how an entry point to react app can be served from flask \
   application_readable: true #NB double check is needed for prod
 ```
 
+this still leaves serviceworker off though
+
 some proper alternatives depending on the architecture: \
 .serve index.html from home route \
 .serve index.html from cdn (cloudstorage+firebase)\
-.spin up node js appengine, for py api spin up another appengine on flask \
+.spin up node js appengine, for py api spin up another appengine on flask
 
 for guidance see \
 https://github.com/redvg/react_burger#deployment
