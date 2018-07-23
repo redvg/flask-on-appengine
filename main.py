@@ -9,6 +9,8 @@ def hello():
     
     return 'hello from appengine'
 
+import views
+
 @app.errorhandler(500)
 def server_error(e):
 
